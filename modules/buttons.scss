@@ -26,6 +26,11 @@ a,
   }
 }
 
+p > a,
+p > .link {
+  text-decoration: underline;
+}
+
 button.big,
 .btn.big {
   padding: 16px 32px;
