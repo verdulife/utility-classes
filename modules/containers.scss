@@ -213,14 +213,14 @@ h-div {
   width: 100%;
   height: 1px;
   display: flex;
-  background: $border;
+  background: var(--color-grey-light);
 }
 
 v-div {
   width: 1px;
   height: 100%;
   display: flex;
-  background: $border;
+  background: var(--color-grey-light);
 }
 
 /* END OF DIVIDERS */
