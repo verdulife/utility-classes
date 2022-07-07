@@ -1,0 +1,44 @@
+input,
+select,
+textarea {
+  background-color: unset;
+  border: none;
+  padding: 12px 24px;
+  transition: 200ms;
+}
+
+input.big,
+select.big,
+textarea.big {
+  padding: 16px 32px;
+}
+
+input.small,
+select.small,
+textarea.small {
+  padding: 6px 12px;
+}
+
+input.round,
+select.round,
+textarea.round {
+  border-radius: 8px;
+}
+input.disabled,
+select.dissabled,
+textarea.disabled {
+  cursor: not-allowed;
+  background-color: var(--color-grey);
+  color: var(--color-grey-dark);
+}
+
+input.outline,
+select.outline,
+textarea.outline {
+  border: 1px solid var(--color-grey-light);
+}
+input.underline,
+select.underline,
+textarea.underline {
+  border: 1px solid var(--color-grey-light);
+}

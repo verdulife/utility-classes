@@ -1,0 +1,43 @@
+.title {
+  font-family: var(--font-title);
+}
+.text {
+  font-family: var(--font-text);
+}
+.system {
+  font-family: var(--font-system);
+}
+
+.aleft {
+  text-align: left;
+}
+.acenter {
+  text-align: center;
+}
+.aright {
+  text-align: right;
+}
+
+.clamp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

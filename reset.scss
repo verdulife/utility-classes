@@ -1,0 +1,83 @@
+@import "variables/colors";
+@import "variables/fonts";
+@import "variables/shadows";
+
+:root {
+  font-family: var(--font-system);
+  font-weight: lighter;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  // disable blue box on mobile
+  -webkit-tap-highlight-color: transparent;
+  &:active {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+*:before,
+*:after {
+  content: "";
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: $black;
+  color: $base;
+}
+
+#app {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+  border-radius: 0.5em;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::selection {
+  background-color: var(--color-pri);
+  color: var(--text-pri);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}

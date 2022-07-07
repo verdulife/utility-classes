@@ -1,0 +1,55 @@
+:root {
+  --color-pri: #00fefe;
+  --color-pri-light: lighten(var(--color-pri), 10%);
+  --color-pri-dark: darken(var(--color-pri), 10%);
+  --text-pri: #000;
+  
+  --color-sec: #7d6bff;
+  --color-sec-light: lighten(var(--color-sec), 10%);
+  --color-sec-dark: darken(var(--color-sec), 10%);
+  --text-sec: #fff;
+  
+  --color-ter: #fa8efd;
+  --color-ter-light: lighten(var(--color-ter), 10%);
+  --color-ter-dark: darken(var(--color-ter), 10%);
+  --text-ter: #000;
+  
+  --color-grey: #898f8f;
+  --color-grey-light: lighten(var(--color-grey), 10%);
+  --color-grey-dark: darken(var(--color-grey), 10%);
+  --text-ter: #fff;
+  
+  --color-bg-light: #f6f6f2;
+  --color-bg-dark: #202020;
+  --color-bg: var(--color-bg-light);
+  
+  --color-success: #9fd4aa;
+  --text-success: #000;
+
+  --color-warning: #ffc869;
+  --text-warning: #000;
+  
+  --color-error: #da3b3e;
+  --text-error: #fff;
+  
+  --color-info: #4579ae;
+  --text-warning: #fff;
+
+  --linear-gradient: linear-gradient(
+    30deg,
+    var(--color-pri),
+    var(--color-sec),
+    var(--color-ter)
+  );
+  --radial-gradient: radial-gradient(
+    circle at center,
+    var(--color-pri),
+    var(--color-sec),
+    var(--color-ter)
+  );
+  --conic-gradient: conic-gradient(
+    var(--color-pri),
+    var(--color-sec),
+    var(--color-ter)
+  );
+}

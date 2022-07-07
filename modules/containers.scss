@@ -1,0 +1,226 @@
+/* START OF PARENT CONTAINERS */
+
+.viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.scroll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-bg);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-pri);
+  }
+}
+
+.scroll.snap {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll > * {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slide {
+  display: inline-flex;
+  white-space: normal;
+}
+
+.slider.snap {
+  scroll-snap-type: x mandatory;
+}
+
+.slide.snap {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.label {
+  font-size: 12px;
+  padding: 2px 4px;
+}
+
+/* END OF PARENT CONTAINERS */
+
+/* START OF DIRECTIONAL CONTAINERS */
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.row-reverse {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.col {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.col-reverse {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+/* END OF DIRECTIONAL CONTAINERS */
+
+/* START OF ALIGNMENTS */
+
+.jstart {
+  justify-content: flex-start;
+}
+.jend {
+  justify-content: flex-end;
+}
+.jcenter {
+  justify-content: center;
+}
+.jbetween {
+  justify-content: space-between;
+}
+.jaround {
+  justify-content: space-around;
+}
+.jevenly {
+  justify-content: space-evenly;
+}
+
+.astart {
+  align-items: flex-start;
+}
+.aend {
+  align-items: flex-end;
+}
+.acenter {
+  align-items: center;
+}
+.abase {
+  align-items: baseline;
+}
+.astretch {
+  align-items: stretch;
+}
+
+.fstart {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.fcenter {
+  justify-content: center;
+  align-items: center;
+}
+.fend {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.sstart {
+  align-self: flex-start;
+}
+.send {
+  align-self: flex-end;
+}
+.scenter {
+  align-self: center;
+}
+.sbase {
+  align-self: baseline;
+}
+.sstretch {
+  align-self: stretch;
+}
+
+/* END OF ALIGNMENTS */
+
+/* START OF RELATIVE SIZING */
+
+.xfill {
+  width: 100%;
+}
+.yfill {
+  height: 100%;
+}
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.grow {
+  flex-grow: 1;
+}
+.grow2 {
+  flex-grow: 2;
+}
+.grow3 {
+  flex-grow: 3;
+}
+.grow4 {
+  flex-grow: 4;
+}
+
+/* START OF RELATIVE SIZING */
+
+/* START OF DIVIDERS */
+h-div {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  background: $border;
+}
+
+v-div {
+  width: 1px;
+  height: 100%;
+  display: flex;
+  background: $border;
+}
+
+/* END OF DIVIDERS */

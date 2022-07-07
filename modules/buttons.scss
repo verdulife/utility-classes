@@ -1,0 +1,122 @@
+button,
+.btn {
+  cursor: pointer;
+  display: block;
+  background-color: unset;
+  text-align: center;
+  border: none;
+  padding: 12px 24px;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: 200ms;
+
+  &:hover {
+    transform: scale(0.97);
+  }
+}
+
+a,
+.link {
+  cursor: pointer;
+  color: unset;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button.big,
+.btn.big {
+  padding: 16px 32px;
+}
+
+button.small,
+.btn.small {
+  padding: 6px 12px;
+}
+
+button.round,
+.btn.round {
+  border-radius: 8px;
+}
+button.disabled,
+.btn.disabeled {
+  cursor: not-allowed;
+  background-color: var(--color-grey);
+  color: var(--color-grey-dark);
+}
+
+button.pri,
+.btn.pri {
+  background-color: var(--color-pri);
+  color: var(--text-pri);
+}
+button.sec,
+.btn.sec {
+  background-color: var(--color-sec);
+  color: var(--text-sec);
+}
+button.ter,
+.btn.ter {
+  background-color: var(--color-ter);
+  color: var(--text-ter);
+}
+
+button.success,
+.btn.success {
+  background-color: var(--color-success);
+  color: var(--text-success);
+}
+button.warning,
+.btn.warning {
+  background-color: var(--color-warning);
+  color: var(--text-warning);
+}
+button.error,
+.btn.error {
+  background-color: var(--color-error);
+  color: var(--text-error);
+}
+button.info,
+.btn.info {
+  background-color: var(--color-info);
+  color: var(--text-info);
+}
+
+button.pri-outline,
+.btn.pri-outline {
+  color: var(--color-pri);
+  outline: 2px solid var(--color-pri);
+}
+button.sec-outline,
+.btn.sec-outline {
+  color: var(--color-sec);
+  outline: 2px solid var(--color-sec);
+}
+button.ter-outline,
+.btn.ter-outline {
+  color: var(--color-ter);
+  outline: 2px solid var(--color-ter);
+}
+
+button.success-outline,
+.btn.success-outline {
+  color: var(--color-success);
+  outline: 2px solid var(--color-success);
+}
+button.warning-outline,
+.btn.warning-outline {
+  color: var(--color-warning);
+  outline: 2px solid var(--color-warning);
+}
+button.error-outline,
+.btn.error-outline {
+  color: var(--color-error);
+  outline: 2px solid var(--color-error);
+}
+button.info-outline,
+.btn.info-outline {
+  color: var(--color-info);
+  outline: 2px solid var(--color-info);
+}

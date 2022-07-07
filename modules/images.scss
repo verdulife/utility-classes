@@ -1,0 +1,40 @@
+img,
+video {
+  object-fit: cover;
+  object-position: center;
+}
+
+img.contain,
+video.contain {
+  object-fit: contain;
+}
+
+img.ptop,
+video.ptop {
+  object-position: top;
+}
+img.pbottom,
+video.pbottom {
+  object-position: bottom;
+}
+img.pleft,
+video.pleft {
+  object-position: left;
+}
+img.pright,
+video.pright {
+  object-position: right;
+}
+
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
