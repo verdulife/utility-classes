@@ -1,0 +1,34 @@
+{
+  "name": "reset-utilities",
+  "version": "1.0.0",
+  "description": "A reset.css based on utility classes and the platform",
+  "main": "utility-classes.scss",
+  "scripts": {
+    "compile": "sass reset.scss reset.css && sass utility-classes.scss utility-classes.css && postcss *.css --use autoprefixer -d build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verdulife/utility-classes.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "design",
+    "system",
+    "platform",
+    "utility",
+    "classes"
+  ],
+  "author": "verdu <verdu@live.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verdulife/utility-classes/issues"
+  },
+  "homepage": "https://github.com/verdulife/utility-classes#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.53.0"
+  }
+}
