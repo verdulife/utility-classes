@@ -4,7 +4,9 @@
   "description": "A reset.css based on utility classes and the platform",
   "main": "utility-classes.scss",
   "scripts": {
-    "compile": "sass reset.scss reset.css && sass utility-classes.scss utility-classes.css && postcss *.css --use autoprefixer -d build/"
+    "compile": "node-sass --output-style compressed -o dist reset.scss && node-sass --output-style compressed -o dist utility-classes.scss",
+    "prefix": "postcss dist/*.css --use autoprefixer --no-map -r",
+    "dev": "npm run compile && npm run prefix && npx live-server"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,11 @@
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "postcss-cli": "^10.0.0",
-    "sass": "^1.53.0"
-  }
+    "node-sass": "^7.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 4 versions",
+    "not dead"
+  ]
 }
