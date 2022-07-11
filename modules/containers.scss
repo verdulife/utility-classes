@@ -196,16 +196,16 @@
 }
 
 .grow {
-  flex-grow: 1;
+  flex: 1 1 90%;
 }
 .grow2 {
-  flex-grow: 2;
+  flex: 2 2 40%;
 }
 .grow3 {
-  flex-grow: 3;
+  flex: 3 3 30%;
 }
 .grow4 {
-  flex-grow: 4;
+  flex: 4 4 15%;
 }
 
 /* START OF RELATIVE SIZING */
