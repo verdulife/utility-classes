@@ -9,142 +9,157 @@
     <link rel="stylesheet" href="/fonts/text.css" />
     <link rel="stylesheet" href="/dist/utility-classes.css" />
     <link rel="stylesheet" href="/dist/reset.css" />
-    <style>
-      .container {
-        max-width: 800px;
-        height: 3000px;
-        margin: 0 auto;
-        gap: 10px;
-        padding: 10% 40px;
-      }
-
-      ul {
-        gap: 10px;
-      }
-
-      li {
-        background: black;
-        color: white;
-        padding: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="/index.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/syntaxhighlighter@4.0.1/src/core.min.js"
+      defer
+    ></script>
   </head>
   <body>
-    <main class="scroll">
-      <div class="container col acenter xfill">
-        <h1 class="title">Hello</h1>
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          nesciunt, sit nobis recusandae sunt alias eveniet corrupti laudantium
-          nostrum tempora quos? Quidem, sapiente iste ab ipsum velit numquam
-          harum porro.
-        </p>
-        <button class="pri round big m:small"><b>Click me</b></button>
+    <div id="app" class="scroll">
+      <main class="container col grow">
+        <section id="containers" class="col grow">
+          <h2>Containers</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nihil
+            obcaecati, et accusamus blanditiis voluptatibus atque eius quod
+            natus, maxime non libero asperiores quos laborum odit exercitationem
+            numquam, expedita totam?
+          </p>
 
-        <div class="xdiv"></div>
+          <xdiv class="gradient"></xdiv>
 
-        <ul class="xfill grid4 t:grid2 m:grid">
-          <li class="col">
-            <h3>Lorem ipsum</h3>
-          </li>
-          <li class="col">
-            <h3>Lorem ipsum</h3>
-          </li>
-          <li class="col">
-            <h3>Lorem ipsum</h3>
-          </li>
-          <li class="col">
-            <h3>Lorem ipsum</h3>
-          </li>
-        </ul>
+          <h3>Viewport wrapper</h3>
+          <p>
+            Width & height al 100% del contenedor padre con display flex. No se
+            hace uso de unidades como vw o vh, ya que estas dan problemas en
+            algunos dispositivos moviles. En su lugar se recomienda el uso del
+            reset.css de reset utilities.
+          </p>
+          <p>Ejemplo:</p>
 
-        <ul class="row jcenter xfill">
-          <li class="col grow">
-            <h3>Lorem ipsum</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow2 t:grow">
-            <h3>Lorem ipsum 2</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow2 t:grow">
-            <h3>Lorem ipsum 2</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow3 t:grow2 m:grow">
-            <h3>Lorem ipsum 3</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow3 t:grow2 m:grow">
-            <h3>Lorem ipsum 3</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow3 t:grow2 m:grow">
-            <h3>Lorem ipsum 3</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow4 t:grow2 m:grow">
-            <h3>Lorem ipsum 4</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow4 t:grow2 m:grow">
-            <h3>Lorem ipsum 4</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow4 t:grow2 m:grow">
-            <h3>Lorem ipsum 4</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow4 t:grow2 m:grow">
-            <h3>Lorem ipsum 4</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow4 t:grow2 m:grow">
-            <h3>Lorem ipsum 4</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-          <li class="col grow4 t:grow2 m:grow">
-            <h3>Lorem ipsum 4</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore facere voluptate.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </main>
+          <div class="frame">
+            <div class="viewport row fcenter">
+              <pre>.viewport</pre>
+            </div>
+          </div>
+
+          <xdiv class="gradient"></xdiv>
+
+          <h3>Scroll wrapper</h3>
+          <p>
+            Como la clase .viewport pero con el overflow-y en auto. Se
+            recomienda el uso de esta clase en todo lugar donde se necesite
+            scroll vertical, ya que incluye correcciones para este proposito,
+            asi como diseño personaliable en la barra.
+          </p>
+
+          <p>Ejemplo:</p>
+
+          <div class="frame">
+            <div class="scroll">
+              <div class="row jcenter xfill" style="height: 1000px">
+                <pre>.scroll</pre>
+              </div>
+            </div>
+          </div>
+
+          <xdiv class="gradient"></xdiv>
+
+          <h3>Snap scroll vertical</h3>
+          <p>
+            Al usar la clase .snap sobre contenedores con la clase .scroll,
+            estos se comportan con scroll snap en el eje vertical. La primera
+            generacion de hijos actuaran como secciones del scroll snap.
+          </p>
+
+          <p>Ejemplo:</p>
+
+          <div class="frame">
+            <div class="scroll snap">
+              <div class="row jcenter fill">
+                <pre>.scroll.snap (view 1)</pre>
+              </div>
+              <div class="row jcenter fill">
+                <pre>.scroll.snap (view 2)</pre>
+              </div>
+              <div class="row jcenter fill">
+                <pre>.scroll.snap (view 3)</pre>
+              </div>
+            </div>
+          </div>
+
+          <xdiv class="gradient"></xdiv>
+
+          <h3>Slider & slide wrappers</h3>
+          <p>
+            Clases para generar scroll horizontal. La clase .slide siempre tiene
+            que ser un hijo directo de la clase .slider. Para asegurar el
+            correcto funcionamiento, se recomienda usar un hijo dentro de la
+            clase .slide y a este aplicarle los estilos deseados. Si se usa la
+            clase .snap en .slider, este obtendra snap scroll horizontal y usara
+            los .slide como secciones.
+          </p>
+
+          <p>Ejemplo: (shift + scroll para dispositivos no touch)</p>
+
+          <div class="frame">
+            <div class="slider snap" style="padding: 20px">
+              <div
+                class="slide xfill"
+                style="border: 1px solid var(--color-error)"
+              >
+                <pre>.slider.snap > .slide (view 1)</pre>
+              </div>
+              <div
+                class="slide xfill"
+                style="border: 1px solid var(--color-error)"
+              >
+                <pre>.slider.snap > .slide (view 2)</pre>
+              </div>
+              <div
+                class="slide xfill"
+                style="border: 1px solid var(--color-error)"
+              >
+                <pre>.slider.snap > .slide (view 3)</pre>
+              </div>
+            </div>
+          </div>
+
+          <xdiv class="gradient"></xdiv>
+
+          <h3>Row direction</h3>
+          <p>
+            Clase que define la direccion del contenedor como una fila. Aplica
+            display flex con wrap.
+          </p>
+
+          <p>Ejemplo:</p>
+
+          <div class="frame">
+            <div class="row xfill">
+              <div
+                class="row jcenter"
+                style="border: 1px solid var(--color-error)"
+              >
+                <pre>.row > element 1</pre>
+              </div>
+              <div
+                class="row jcenter"
+                style="border: 1px solid var(--color-error)"
+              >
+                <pre>.row > element 2</pre>
+              </div>
+              <div
+                class="row jcenter"
+                style="border: 1px solid var(--color-error)"
+              >
+                <pre>.row > element 3</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,41 +1,41 @@
-.title {
+.t\:title {
   font-family: var(--font-title);
 }
-.text {
+.t\:text {
   font-family: var(--font-text);
 }
-.system {
+.t\:system {
   font-family: var(--font-system);
 }
 
-.tleft {
+.t\:tleft {
   text-align: left;
 }
-.tcenter {
+.t\:tcenter {
   text-align: center;
 }
-.tright {
+.t\:tright {
   text-align: right;
 }
 
-.clamp {
+.t\:clamp {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.clamp-2 {
+.t\:clamp2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.clamp-3 {
+.t\:clamp3 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.clamp-4 {
+.t\:clamp4 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;

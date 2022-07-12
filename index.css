@@ -1,0 +1,52 @@
+:root {
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10% 40px;
+}
+
+xdiv {
+  margin: 60px 0;
+}
+
+section {
+  gap: 20px;
+}
+
+pre {
+  background-color: var(--color-bg-dark);
+  color: var(--color-pri);
+  border-radius: 0.25em;
+  padding: 40px;
+}
+
+.frame {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 16/9;
+  border: 1px solid var(--color-grey);
+  border-radius: 0.25em;
+  padding: 10px;
+}
+
+.frame pre {
+  background: none;
+  color: initial;
+}
+
+.frame > * {
+  background: var(--linear-gradient);
+  border: 1px solid var(--color-error);
+}

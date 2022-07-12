@@ -51,14 +51,14 @@
     display: none;
   }
 }
-.m\:slide {
+.m\:slider > .m\:slide {
   display: inline-flex;
   white-space: normal;
 }
 .m\:slider.snap {
   scroll-snap-type: x mandatory;
 }
-.m\:slide.snap {
+.m\:slider.snap > .m\:slide {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
@@ -181,32 +181,27 @@
   flex: 1 1 calc(25% / 1.3);
 }
 
-.m\:grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+xdiv.m\:black,
+ydiv.m\:black {
+  background: #000;
 }
-.m\:grid2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+xdiv.m\:white,
+ydiv.m\:white {
+  background: #000;
 }
-.m\:grid3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+xdiv.m\:pri,
+ydiv.m\:pri {
+  background: var(--color-pri);
 }
-.m\:grid4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+xdiv.m\:sec,
+ydiv.m\:sec {
+  background: var(--color-sec);
 }
-
-.m\:xdiv {
-  width: 100%;
-  height: 1px;
-  display: flex;
-  background: var(--color-grey-light);
+xdiv.m\:ter,
+ydiv.m\:ter {
+  background: var(--color-ter);
 }
-.m\:ydiv {
-  width: 1px;
-  height: 100%;
-  display: flex;
-  background: var(--color-grey-light);
+xdiv.m\:gradient,
+ydiv.m\:gradient {
+  background: var(--linear-gradient);
 }
