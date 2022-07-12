@@ -26,6 +26,15 @@ video.pright {
   object-position: right;
 }
 
+img.fleft,
+video.fleft {
+  float: left;
+}
+img.fright,
+video.fright {
+  float: right;
+}
+
 .icon {
   cursor: pointer;
   display: flex;

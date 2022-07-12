@@ -1,4 +1,4 @@
-.viewport {
+.t\:viewport {
   position: relative;
   width: 100%;
   height: 100%;
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.scroll {
+.t\:scroll {
   position: relative;
   width: 100%;
   height: 100%;
@@ -27,15 +27,15 @@
     background-color: var(--color-pri);
   }
 }
-.scroll.snap {
+.t\:scroll.snap {
   scroll-snap-type: y mandatory;
 }
-.scroll.snap > * {
+.t\:scroll.snap > * {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
-.slider {
+.t\:slider {
   position: relative;
   width: 100%;
   display: block;
@@ -51,160 +51,160 @@
     display: none;
   }
 }
-.slide {
+.t\:slide {
   display: inline-flex;
   white-space: normal;
 }
-.slider.snap {
+.t\:slider.snap {
   scroll-snap-type: x mandatory;
 }
-.slide.snap {
+.t\:slide.snap {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
-.row {
+.t\:row {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.row-reverse {
+.t\:row-reverse {
   display: flex;
   flex-flow: row-reverse wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.col {
+.t\:col {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.col-reverse {
+.t\:col-reverse {
   display: flex;
   flex-flow: column-reverse wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.nowrap {
+.t\:nowrap {
   flex-wrap: nowrap;
   overflow: hidden;
 }
 
-.jstart {
+.t\:jstart {
   justify-content: flex-start;
 }
-.jend {
+.t\:jend {
   justify-content: flex-end;
 }
-.jcenter {
+.t\:jcenter {
   justify-content: center;
 }
-.jbetween {
+.t\:jbetween {
   justify-content: space-between;
 }
-.jaround {
+.t\:jaround {
   justify-content: space-around;
 }
-.jevenly {
+.t\:jevenly {
   justify-content: space-evenly;
 }
 
-.astart {
+.t\:astart {
   align-items: flex-start;
 }
-.aend {
+.t\:aend {
   align-items: flex-end;
 }
-.acenter {
+.t\:acenter {
   align-items: center;
 }
-.abase {
+.t\:abase {
   align-items: baseline;
 }
-.astretch {
+.t\:astretch {
   align-items: stretch;
 }
 
-.fstart {
+.t\:fstart {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.fcenter {
+.t\:fcenter {
   justify-content: center;
   align-items: center;
 }
-.fend {
+.t\:fend {
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.sstart {
+.t\:sstart {
   align-self: flex-start;
 }
-.send {
+.t\:send {
   align-self: flex-end;
 }
-.scenter {
+.t\:scenter {
   align-self: center;
 }
-.sbase {
+.t\:sbase {
   align-self: baseline;
 }
-.sstretch {
+.t\:sstretch {
   align-self: stretch;
 }
 
-.xfill {
+.t\:xfill {
   width: 100%;
 }
-.yfill {
+.t\:yfill {
   height: 100%;
 }
-.fill {
+.t\:fill {
   width: 100%;
   height: 100%;
 }
 
-.grow {
+.t\:grow {
   flex: 1 1 calc(100% / 1.2);
 }
-.grow2 {
+.t\:grow2 {
   flex: 1 1 calc(50% / 1.2);
 }
-.grow3 {
+.t\:grow3 {
   flex: 1 1 calc((100% / 3) / 1.2);
 }
-.grow4 {
+.t\:grow4 {
   flex: 1 1 calc(25% / 1.3);
 }
 
-.grid {
+.t\:grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
-.grid2 {
+.t\:grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.grid3 {
+.t\:grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.grid4 {
+.t\:grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.xdiv {
+.t\:xdiv {
   width: 100%;
   height: 1px;
   display: flex;
   background: var(--color-grey-light);
 }
-.ydiv {
+.t\:ydiv {
   width: 1px;
   height: 100%;
   display: flex;

@@ -1,0 +1,35 @@
+input.t\:big,
+select.t\:big,
+textarea.t\:big {
+  padding: 16px 32px;
+}
+
+input.t\:small,
+select.t\:small,
+textarea.t\:small {
+  padding: 6px 12px;
+}
+
+input.t\:round,
+select.t\:round,
+textarea.t\:round {
+  border-radius: 8px;
+}
+input.t\:disabled,
+select.t\:disabled,
+textarea.t\:disabled {
+  cursor: not-allowed;
+  background-color: var(--color-grey);
+  color: var(--color-grey-dark);
+}
+
+input.t\:outline,
+select.t\:outline,
+textarea.t\:outline {
+  border: 1px solid var(--color-grey-light);
+}
+input.t\:underline,
+select.t\:underline,
+textarea.t\:underline {
+  border: 1px solid var(--color-grey-light);
+}

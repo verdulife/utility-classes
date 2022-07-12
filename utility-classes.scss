@@ -1,7 +1,21 @@
 @import "modules/containers";
-@import "modules/containers.media";
-
 @import "modules/buttons";
 @import "modules/inputs";
 @import "modules/text";
 @import "modules/images";
+
+@media (max-width: 920px) {
+  @import "modules/tablet/containers";
+  @import "modules/tablet/buttons";
+  @import "modules/tablet/inputs";
+  @import "modules/tablet/text";
+  @import "modules/tablet/images";
+}
+
+@media (max-width: 420px) {
+  @import "modules/mobile/containers";
+  @import "modules/mobile/buttons";
+  @import "modules/mobile/inputs";
+  @import "modules/mobile/text";
+  @import "modules/mobile/images";
+}

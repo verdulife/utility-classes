@@ -1,0 +1,94 @@
+button.m\:big,
+.btn.m\:big {
+  padding: 16px 32px;
+}
+
+button.m\:small,
+.btn.m\:small {
+  padding: 6px 12px;
+}
+
+button.m\:round,
+.btn.m\:round {
+  border-radius: 8px;
+}
+button.m\:disabled,
+.btn.m\:disabeled {
+  cursor: not-allowed;
+  background-color: var(--color-grey);
+  color: var(--color-grey-dark);
+}
+
+button.m\:pri,
+.btn.m\:pri {
+  background-color: var(--color-pri);
+  color: var(--text-pri);
+}
+button.m\:sec,
+.btn.m\:sec {
+  background-color: var(--color-sec);
+  color: var(--text-sec);
+}
+button.m\:ter,
+.btn.m\:ter {
+  background-color: var(--color-ter);
+  color: var(--text-ter);
+}
+
+button.m\:success,
+.btn.m\:success {
+  background-color: var(--color-success);
+  color: var(--text-success);
+}
+button.m\:warning,
+.btn.m\:warning {
+  background-color: var(--color-warning);
+  color: var(--text-warning);
+}
+button.m\:error,
+.btn.m\:error {
+  background-color: var(--color-error);
+  color: var(--text-error);
+}
+button.m\:info,
+.btn.m\:info {
+  background-color: var(--color-info);
+  color: var(--text-info);
+}
+
+button.m\:pri-outline,
+.btn.m\:pri-outline {
+  color: var(--color-pri);
+  outline: 2px solid var(--color-pri);
+}
+button.m\:sec-outline,
+.btn.m\:sec-outline {
+  color: var(--color-sec);
+  outline: 2px solid var(--color-sec);
+}
+button.m\:ter-outline,
+.btn.m\:ter-outline {
+  color: var(--color-ter);
+  outline: 2px solid var(--color-ter);
+}
+
+button.m\:success-outline,
+.btn.m\:success-outline {
+  color: var(--color-success);
+  outline: 2px solid var(--color-success);
+}
+button.m\:warning-outline,
+.btn.m\:warning-outline {
+  color: var(--color-warning);
+  outline: 2px solid var(--color-warning);
+}
+button.m\:error-outline,
+.btn.m\:error-outline {
+  color: var(--color-error);
+  outline: 2px solid var(--color-error);
+}
+button.m\:info-outline,
+.btn.m\:info-outline {
+  color: var(--color-info);
+  outline: 2px solid var(--color-info);
+}

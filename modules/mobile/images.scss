@@ -1,0 +1,30 @@
+img.m\:contain,
+video.m\:contain {
+  object-fit: contain;
+}
+
+img.m\:ptop,
+video.m\:ptop {
+  object-position: top;
+}
+img.m\:pbottom,
+video.m\:pbottom {
+  object-position: bottom;
+}
+img.m\:pleft,
+video.m\:pleft {
+  object-position: left;
+}
+img.m\:pright,
+video.m\:pright {
+  object-position: right;
+}
+
+img.t\:fleft,
+video.t\:fleft {
+  float: left;
+}
+img.t\:fright,
+video.t\:fright {
+  float: right;
+}

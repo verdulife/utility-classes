@@ -1,4 +1,4 @@
-.viewport {
+.m\:viewport {
   position: relative;
   width: 100%;
   height: 100%;
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.scroll {
+.m\:scroll {
   position: relative;
   width: 100%;
   height: 100%;
@@ -27,15 +27,15 @@
     background-color: var(--color-pri);
   }
 }
-.scroll.snap {
+.m\:scroll.snap {
   scroll-snap-type: y mandatory;
 }
-.scroll.snap > * {
+.m\:scroll.snap > * {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
-.slider {
+.m\:slider {
   position: relative;
   width: 100%;
   display: block;
@@ -51,160 +51,160 @@
     display: none;
   }
 }
-.slide {
+.m\:slide {
   display: inline-flex;
   white-space: normal;
 }
-.slider.snap {
+.m\:slider.snap {
   scroll-snap-type: x mandatory;
 }
-.slide.snap {
+.m\:slide.snap {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
-.row {
+.m\:row {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.row-reverse {
+.m\:row-reverse {
   display: flex;
   flex-flow: row-reverse wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.col {
+.m\:col {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.col-reverse {
+.m\:col-reverse {
   display: flex;
   flex-flow: column-reverse wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.nowrap {
+.m\:nowrap {
   flex-wrap: nowrap;
   overflow: hidden;
 }
 
-.jstart {
+.m\:jstart {
   justify-content: flex-start;
 }
-.jend {
+.m\:jend {
   justify-content: flex-end;
 }
-.jcenter {
+.m\:jcenter {
   justify-content: center;
 }
-.jbetween {
+.m\:jbetween {
   justify-content: space-between;
 }
-.jaround {
+.m\:jaround {
   justify-content: space-around;
 }
-.jevenly {
+.m\:jevenly {
   justify-content: space-evenly;
 }
 
-.astart {
+.m\:astart {
   align-items: flex-start;
 }
-.aend {
+.m\:aend {
   align-items: flex-end;
 }
-.acenter {
+.m\:acenter {
   align-items: center;
 }
-.abase {
+.m\:abase {
   align-items: baseline;
 }
-.astretch {
+.m\:astretch {
   align-items: stretch;
 }
 
-.fstart {
+.m\:fstart {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.fcenter {
+.m\:fcenter {
   justify-content: center;
   align-items: center;
 }
-.fend {
+.m\:fend {
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.sstart {
+.m\:sstart {
   align-self: flex-start;
 }
-.send {
+.m\:send {
   align-self: flex-end;
 }
-.scenter {
+.m\:scenter {
   align-self: center;
 }
-.sbase {
+.m\:sbase {
   align-self: baseline;
 }
-.sstretch {
+.m\:sstretch {
   align-self: stretch;
 }
 
-.xfill {
+.m\:xfill {
   width: 100%;
 }
-.yfill {
+.m\:yfill {
   height: 100%;
 }
-.fill {
+.m\:fill {
   width: 100%;
   height: 100%;
 }
 
-.grow {
+.m\:grow {
   flex: 1 1 calc(100% / 1.2);
 }
-.grow2 {
+.m\:grow2 {
   flex: 1 1 calc(50% / 1.2);
 }
-.grow3 {
+.m\:grow3 {
   flex: 1 1 calc((100% / 3) / 1.2);
 }
-.grow4 {
+.m\:grow4 {
   flex: 1 1 calc(25% / 1.3);
 }
 
-.grid {
+.m\:grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
-.grid2 {
+.m\:grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.grid3 {
+.m\:grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.grid4 {
+.m\:grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.xdiv {
+.m\:xdiv {
   width: 100%;
   height: 1px;
   display: flex;
   background: var(--color-grey-light);
 }
-.ydiv {
+.m\:ydiv {
   width: 1px;
   height: 100%;
   display: flex;
