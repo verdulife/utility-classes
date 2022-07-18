@@ -77,13 +77,13 @@
 }
 .m\:col {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
 .m\:col-reverse {
   display: flex;
-  flex-flow: column-reverse wrap;
+  flex-flow: column-reverse nowrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -91,6 +91,9 @@
 .m\:nowrap {
   flex-wrap: nowrap;
   overflow: hidden;
+}
+.m\:wrap {
+  flex-wrap: wrap;
 }
 
 .m\:jstart {
