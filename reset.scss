@@ -2,28 +2,14 @@
 @import "variables/fonts";
 @import "variables/shadows";
 
-:root {
-  font-family: var(--font-system);
-  font-weight: lighter;
-  line-height: 1.4;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: lighter;
-  line-height: 1.2;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font-system);
+  line-height: 1.4;
   vertical-align: baseline;
   border: none;
   outline: none;
@@ -37,6 +23,21 @@ h6 {
   &:active {
     -webkit-tap-highlight-color: transparent;
   }
+}
+
+*:not(pre):not(code):not(strong):not(b):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: 100%;
+  font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+  line-height: 1.2;
 }
 
 html,

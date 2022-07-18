@@ -4,14 +4,14 @@ button,
   display: block;
   background-color: unset;
   text-align: center;
-  border: none;
+  border: 2px solid transparent;
   padding: 12px 24px;
   user-select: none;
   -webkit-user-drag: none;
   transition: 200ms;
 
   &:hover {
-    transform: scale(0.97);
+    transform: scale(0.95);
   }
 }
 
@@ -20,15 +20,15 @@ a,
   cursor: pointer;
   color: unset;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 p > a,
 p > .link {
   text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 button.big,
@@ -50,78 +50,86 @@ button.disabled,
   cursor: not-allowed;
   background-color: var(--color-grey);
   color: var(--color-grey-dark);
+  border-color: var(--color-grey);
 }
 
 button.pri,
 .btn.pri {
   background-color: var(--color-pri);
   color: var(--text-pri);
+  border-color: var(--color-pri);
 }
 button.sec,
 .btn.sec {
   background-color: var(--color-sec);
   color: var(--text-sec);
+  border-color: var(--color-sec);
 }
 button.ter,
 .btn.ter {
   background-color: var(--color-ter);
   color: var(--text-ter);
+  border-color: var(--color-ter);
 }
 
 button.success,
 .btn.success {
   background-color: var(--color-success);
   color: var(--text-success);
+  border-color: var(--color-success);
 }
 button.warning,
 .btn.warning {
   background-color: var(--color-warning);
   color: var(--text-warning);
+  border-color: var(--color-warning);
 }
 button.error,
 .btn.error {
   background-color: var(--color-error);
   color: var(--text-error);
+  border-color: var(--color-error);
 }
 button.info,
 .btn.info {
   background-color: var(--color-info);
   color: var(--text-info);
+  border-color: var(--color-info);
 }
 
 button.pri-outline,
 .btn.pri-outline {
   color: var(--color-pri);
-  outline: 2px solid var(--color-pri);
+  border-color: var(--color-pri);
 }
 button.sec-outline,
 .btn.sec-outline {
   color: var(--color-sec);
-  outline: 2px solid var(--color-sec);
+  border-color: var(--color-sec);
 }
 button.ter-outline,
 .btn.ter-outline {
   color: var(--color-ter);
-  outline: 2px solid var(--color-ter);
+  border-color: var(--color-ter);
 }
 
 button.success-outline,
 .btn.success-outline {
   color: var(--color-success);
-  outline: 2px solid var(--color-success);
+  border-color: var(--color-success);
 }
 button.warning-outline,
 .btn.warning-outline {
   color: var(--color-warning);
-  outline: 2px solid var(--color-warning);
+  border-color: var(--color-warning);
 }
 button.error-outline,
 .btn.error-outline {
   color: var(--color-error);
-  outline: 2px solid var(--color-error);
+  border-color: var(--color-error);
 }
 button.info-outline,
 .btn.info-outline {
   color: var(--color-info);
-  outline: 2px solid var(--color-info);
+  border-color: var(--color-info);
 }

@@ -2,7 +2,8 @@ input,
 select,
 textarea {
   background-color: unset;
-  border: none;
+  border: 2px solid transparent;
+  border-radius: 0;
   padding: 12px 24px;
   transition: 200ms;
 }
@@ -35,10 +36,47 @@ textarea.disabled {
 input.outline,
 select.outline,
 textarea.outline {
-  border: 1px solid var(--color-grey-light);
+  border-color: var(--color-grey-light);
 }
 input.underline,
 select.underline,
 textarea.underline {
-  border: 1px solid var(--color-grey-light);
+  border-bottom-color: var(--color-grey-light);
+}
+
+input.black-outline,
+select.black-outline,
+textarea.black-outline {
+  border-color: #000;
+}
+input.black-underline,
+select.black-underline,
+textarea.black-underline {
+  border-bottom-color: #000;
+}
+input.white-outline,
+select.white-outline,
+textarea.white-outline {
+  border-color: #fff;
+}
+input.white-underline,
+select.white-underline,
+textarea.white-underline {
+  border-bottom-color: #fff;
+}
+
+input[class*="outline"],
+select[class*="outline"],
+textarea[class*="outline"] {
+  &:focus {
+    border-color: var(--color-info);
+  }
+}
+
+input[class*="underline"],
+select[class*="underline"],
+textarea[class*="underline"] {
+  &:focus {
+    border-bottom-color: var(--color-info);
+  }
 }
