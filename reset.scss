@@ -30,8 +30,7 @@ code {
   font-family: "Courier New", Courier, monospace, "Segoe UI Emoji";
 }
 
-strong,
-b {
+:is(h1, h2, h3, h4, h5, h6, p) > * {
   font-family: unset;
 }
 
