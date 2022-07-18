@@ -17,78 +17,86 @@ button.t\:disabled,
   cursor: not-allowed;
   background-color: var(--color-grey);
   color: var(--color-grey-dark);
+  border-color: var(--color-grey);
 }
 
 button.t\:pri,
 .btn.t\:pri {
   background-color: var(--color-pri);
   color: var(--text-pri);
+  border-color: var(--color-pri);
 }
 button.t\:sec,
 .btn.t\:sec {
   background-color: var(--color-sec);
   color: var(--text-sec);
+  border-color: var(--color-sec);
 }
 button.t\:ter,
 .btn.t\:ter {
   background-color: var(--color-ter);
   color: var(--text-ter);
+  border-color: var(--color-ter);
 }
 
 button.t\:success,
 .btn.t\:success {
   background-color: var(--color-success);
   color: var(--text-success);
+  border-color: var(--color-success);
 }
 button.t\:warning,
 .btn.t\:warning {
   background-color: var(--color-warning);
   color: var(--text-warning);
+  border-color: var(--color-warning);
 }
 button.t\:error,
 .btn.t\:error {
   background-color: var(--color-error);
   color: var(--text-error);
+  border-color: var(--color-error);
 }
 button.t\:info,
 .btn.t\:info {
   background-color: var(--color-info);
   color: var(--text-info);
+  border-color: var(--color-info);
 }
 
 button.t\:pri-outline,
 .btn.t\:pri-outline {
   color: var(--color-pri);
-  outline: 2px solid var(--color-pri);
+  border-color: var(--color-pri);
 }
 button.t\:sec-outline,
 .btn.t\:sec-outline {
   color: var(--color-sec);
-  outline: 2px solid var(--color-sec);
+  border-color: var(--color-sec);
 }
 button.t\:ter-outline,
 .btn.t\:ter-outline {
   color: var(--color-ter);
-  outline: 2px solid var(--color-ter);
+  border-color: var(--color-ter);
 }
 
 button.t\:success-outline,
 .btn.t\:success-outline {
   color: var(--color-success);
-  outline: 2px solid var(--color-success);
+  border-color: var(--color-success);
 }
 button.t\:warning-outline,
 .btn.t\:warning-outline {
   color: var(--color-warning);
-  outline: 2px solid var(--color-warning);
+  border-color: var(--color-warning);
 }
 button.t\:error-outline,
 .btn.t\:error-outline {
   color: var(--color-error);
-  outline: 2px solid var(--color-error);
+  border-color: var(--color-error);
 }
 button.t\:info-outline,
 .btn.t\:info-outline {
   color: var(--color-info);
-  outline: 2px solid var(--color-info);
+  border-color: var(--color-info);
 }

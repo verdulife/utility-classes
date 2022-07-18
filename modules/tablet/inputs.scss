@@ -26,10 +26,31 @@ textarea.t\:disabled {
 input.t\:outline,
 select.t\:outline,
 textarea.t\:outline {
-  border: 1px solid var(--color-grey-light);
+  border-color: var(--color-grey-light);
 }
 input.t\:underline,
 select.t\:underline,
 textarea.t\:underline {
-  border: 1px solid var(--color-grey-light);
+  border-bottom-color: var(--color-grey-light);
+}
+
+input.t\:black-outline,
+select.t\:black-outline,
+textarea.t\:black-outline {
+  border-color: #000;
+}
+input.t\:black-underline,
+select.t\:black-underline,
+textarea.t\:black-underline {
+  border-bottom-color: #000;
+}
+input.t\:white-outline,
+select.t\:white-outline,
+textarea.t\:white-outline {
+  border-color: #fff;
+}
+input.t\:white-underline,
+select.t\:white-underline,
+textarea.t\:white-underline {
+  border-bottom-color: #fff;
 }

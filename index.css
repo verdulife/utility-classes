@@ -1,4 +1,6 @@
-
+:root {
+  font-family: var(--font-text);
+}
 
 h1,
 h2,

@@ -25,7 +25,17 @@
   }
 }
 
-*:not(pre):not(code):not(strong):not(b):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+pre,
+code {
+  font-family: "Courier New", Courier, monospace, "Segoe UI Emoji";
+}
+
+strong,
+b {
+  font-family: unset;
+}
+
+*:not(strong):not(b):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
   font-size: 100%;
   font-weight: lighter;
 }
