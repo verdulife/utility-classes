@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A reset.css based on utility classes and the platform",
   "main": "utility-classes.scss",
+  "type": "module",
   "scripts": {
     "compile": "node-sass --output-style compressed -o dist reset.scss && node-sass --output-style compressed -o dist utility-classes.scss",
     "prefix": "postcss dist/*.css --use autoprefixer --no-map -r",

@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   font-family: var(--font-system);
+  font-size: 100%;
+  font-weight: lighter;
   line-height: 1.4;
   vertical-align: baseline;
   border: none;
@@ -30,24 +32,21 @@ code {
   font-family: "Courier New", Courier, monospace, "Segoe UI Emoji";
 }
 
-:is(h1, h2, h3, h4, h5, h6, p) > * {
-  font-family: unset;
-}
-
-*:not(strong):not(b):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 100%;
-  font-weight: lighter;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: lighter;
+:is(h1, h2, h3, h4, h5, h6) {
   line-height: 1.2;
 }
+
+:is(h1, h2, h3, h4, h5, h6, p) > * {
+  font-family: unset;
+  line-height: unset;
+}
+
+h1 { font-size: 2.5em }
+h2 { font-size: 2em }
+h3 { font-size: 1.5em }
+h4 { font-size: 1em }
+h5 { font-size: 0.9em }
+h6 { font-size: 0.7em }
 
 html,
 body {
